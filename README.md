@@ -1,5 +1,30 @@
+# Welcome to Gromacs-Nanopore for [Smog-Models](http://smog-server.org/)
 
-               Welcome to the official version of GROMACS!
+# A forked version of Gromacs to capture the interaction between a nanopore and a biomolecule
+
+This version lets you represent an opening of a nanopore in the simulation. The pore consists of an wall with a 
+conical opening followed by a cylinder. Specifying the parameters of this geometry adds a Lennard-Jones 6-12 potential on each
+atom of the system as a function of its closest distance from the pore surface.
+
+Pore parameters:
+
+>poreX , poreY, pore Z : Opening of the cylinder along the Z direction.
+>
+>poreR : radius of the pore in nm
+>
+>poreL : Length of the cylindrical part.
+>
+>poreh1, poreh2 : Height of the cylinders
+>
+>poreAlpha : Opening angle of the cone
+>
+>porePar6, porePar12 : Lennard-Jones Cooefficients
+
+Add the flag -pore while running mdrun to include the interaction term.
+
+This code has been tested extensively with smog-models while implementing techniques like Umbrella Sampling and Replica Exchange 
+
+
 
 If you are familiar with Unix, it should be fairly trivial to compile and
 install GROMACS. GROMACS uses only the CMake build sytem, and our
@@ -73,6 +98,6 @@ contribute in other ways are listed as GROMACS supporters on our webpages.
 Don't hesitate to contact us at gromacs@gromacs.org if you are interested.
 
 
-                       Good luck with your simulations!
+ ### Good luck with your simulations!
 
-                              The GROMACS Crew
+ ### -- The GROMACS Crew and the Whitford group
