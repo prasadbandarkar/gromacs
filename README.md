@@ -24,7 +24,7 @@ Add the flag -pore while running mdrun to include the interaction term.
 
 This code has been tested extensively with smog-models while implementing techniques like Umbrella Sampling and Replica Exchange 
 
-
+**********
 
 If you are familiar with Unix, it should be fairly trivial to compile and
 install GROMACS. GROMACS uses only the CMake build sytem, and our
